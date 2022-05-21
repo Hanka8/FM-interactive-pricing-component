@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <!-- My stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+
+<body>
+  <header>
+    <h1>Simple, traffic-based pricing</h1>
+    <p>Sign-up for our 30-day trial. No credit card required.</p>
+  </header>
+  <main>
+    <section>
+      <div class="slider-div">
+        <p class="pageviews">100K Pageviews</p>
+        <p><span class="value">$16.00</span><span class="month"> / month</span></p>
+        <form class="input" action="index.html" method="post">
+          <label for="priceRange"></label>
+          <input id="priceRange" class="range" type="range" name="" value="16" min="8" max="32" step="8">
+        </form>
+        <div class="slider1">
+        </div>
+        <div class="slider2">
+        </div>
+      </div>
+      <div class="billing-div">
+        <form class="form" action="index.html" method="post">
+          <label for="checkbox">Monthly Billing</label>
+          <input id="checkbox" class="toggle" type="checkbox" name="" value="">
+          <label for="checkbox">Yearly Billing</label>
+        </form>
+        <p class="discount big">25% discount</p>
+        <p class="discount small">25%</p>
+      </div>
+    </section>
+    <hr>
+    <section class="cardFooter">
+      <div class="info-div">
+        <p>Unlimited websites</p>
+        <p>100% data ownership</p>
+        <p>Email reports</p>
+      </div>
+      <button class="submitBtn" type="button" name="button">Start my trial</button>
+    </section>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Hana</a>.
+  </footer>
+  <script src="app2.js"></script>
+</body>
+</html>
