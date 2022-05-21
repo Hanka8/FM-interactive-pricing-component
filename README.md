@@ -1,0 +1,1 @@
+# FM-interactive-pricing-component
