@@ -200,7 +200,7 @@ input {
 .slider2{
   left: var(--width1);
   width: var(--width2);
-  background-color: var(--grey1);
+  background-color: var(--light2);
 }
 
 /* ########## TOGGLE BUTTON ######### */
