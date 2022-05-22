@@ -62,6 +62,7 @@ main {
   padding: 3rem;
   box-sizing: border-box;
   box-shadow: 0 10px 15px -1px hsl(223, 50%, 87%);
+  margin-bottom: 5rem;
 }
 
 .slider-div {
@@ -107,9 +108,16 @@ main {
 }
 
 /* THUMB */
+input[type=range] {
+  -webkit-appearance: none;
+}
+
+.input label {
+  display: none;
+}
 
 /* firefox */
-input[type=range]::-moz-range-thumb, input[type=range]::-webkit-slider-thumb {
+input[type=range]::-moz-range-thumb {
   box-shadow: none;
   border: none;
   height: 2.5rem;
@@ -122,13 +130,13 @@ input[type=range]::-moz-range-thumb, input[type=range]::-webkit-slider-thumb {
   position: relative;
 }
 
-input[type=range]:hover::-moz-range-thumb, input[type=range]:hover::-webkit-slider-thumb {
+input[type=range]:hover::-moz-range-thumb{
   background: url(images/icon-slider.svg), hsl(174, 86%, 65%);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-input[type=range]:active::-moz-range-thumb, input[type=range]:focus::-webkit-slider-thumb {
+input[type=range]:active::-moz-range-thumb{
   background: url(images/icon-slider.svg), #24aca1;
   background-repeat: no-repeat;
   background-position: center;
@@ -139,6 +147,30 @@ input[type=range]:active::-moz-range-thumb, input[type=range]:focus::-webkit-sli
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -14px;
+  box-shadow: none;
+  border: none;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  background: url(images/icon-slider.svg), var(--cyan);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  position: relative;
+}
+
+
+input[type=range]:hover::-webkit-slider-thumb {
+  background: url(images/icon-slider.svg), hsl(174, 86%, 65%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input[type=range]:focus::-webkit-slider-thumb {
+  background: url(images/icon-slider.svg), #24aca1;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: grab;
 }
 
 input {
