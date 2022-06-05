@@ -11,7 +11,7 @@ const pageviews = document.querySelector(".pageviews");
 //updates price
 function updatePrize() {
   if (btn.checked) {
-    value.textContent = "$" + ((priceRange.value * 12) - (priceRange.value * 0.25)) + ".00";
+    value.textContent = "$" + ((priceRange.value * 12) - (priceRange.value * 12 * 0.25)) + ".00";
   } else {
     value.textContent = "$" + priceRange.value + ".00";
   }
